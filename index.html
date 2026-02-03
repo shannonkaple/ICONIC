@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Computer Icon Games</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f6ff;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      margin-top: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 40px auto;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      font-size: 22px;
+      cursor: pointer;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    .card:hover {
+      background-color: #e8efff;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🖥️ Computer Icon Games</h1>
+<p>Click a game to play!</p>
+
+<div class="grid">
+  <div class="card" onclick="location.href='match-icons.html'">
+    🧩 Match the Icons
+  </div>
+
+  <div class="card" onclick="location.href='what-does-it-do.html'">
+    🤔 What Does It Do?
+  </div>
+
+  <div class="card" onclick="location.href='browser-buttons.html'">
+    🔄 Browser Buttons
+  </div>
+
+  <div class="card" onclick="location.href='drag-drop.html'">
+    🖱️ Drag & Drop
+  </div>
+</div>
+
+</body>
+</html>
