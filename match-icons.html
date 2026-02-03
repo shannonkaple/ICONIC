@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Match the Icons</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #fff7e6;
+      padding: 30px;
+    }
+    button {
+      font-size: 20px;
+      margin: 10px;
+      padding: 15px 25px;
+      border-radius: 15px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🧩 Match the Icon</h1>
+<p>Which app is used for math?</p>
+
+<!-- You can replace this text later with an image -->
+<h2>🔢</h2>
+
+<button onclick="check('Zearn')">Zearn</button>
+<button onclick="check('BrainPOP Jr')">BrainPOP Jr</button>
+<button onclick="check('Google Docs')">Google Docs</button>
+
+<p id="result"></p>
+
+<button onclick="location.href='index.html'">⬅ Back to Menu</button>
+
+<script>
+function check(answer) {
+  if (answer === 'Zearn') {
+    document.getElementById('result').innerText = '✅ Correct!';
+  } else {
+    document.getElementById('result').innerText = '❌ Try again!';
+  }
+}
+</script>
+
+</body>
+</html>
